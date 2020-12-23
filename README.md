@@ -37,15 +37,18 @@
 #### 모델링
 
 1. Content Based Filtering
+
    각 게임의 Description을 활용하여 그 게임의 설정과 플레이 방식을 유추하여 비슷한 게임을 추천하고자 하였다. 이를 위해 활용한 것은 TF-IDF 라이브러리이다. 분석 대상으로는 단어 2개를 기준으로 해당 게임의 특징을 도출하고자 하였다. 그리고 Vector화된 게임의 특징들을 Cosine Similarity 모델을 통해 유사도 검증을 진행하였다. 그리고 유사도가 95% 이상인 게임들 중 20개를 추천할 수 있도록 하였다.
 
 
 2. Collaborative Filtering
+
    유저가 보유한 게임과 다른 유저가 보유한 게임을 비교하여 새로운 게임을 추천해주는 협업필터링이다. 협업필터링에 사용한 알고리즘은 Matrix Factorization이다. User-Item 데이터프레임을 기반으로 피어슨 상관계수를 활용하여 유사도를 검증한 후 게임을 추천하는 방식이다.
 
 
 
 3. Hybrid Filtering
+
    (1) 하이브리드 필터링은 Content-Based-Filtering과 Collaborative-Filtering로 도출된 rating을 가중치를 넣어 게임을 추천하는 Parallelized hybridization을 진행한다. 추천 시스템에 있어 산업적 학계적 사례에 따라 Collaborative Filtering의 가중치(0.95)를 Content-Based-Filtering 보다 높은 가중치(0.90)를 부여한다.
    
    
