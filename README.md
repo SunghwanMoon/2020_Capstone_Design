@@ -27,16 +27,16 @@
 #### 데이터전처리
 
 1. 게임 별 5개의 Attribute를 가진 데이터프레임 형성
-![game_info](https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png)
-<img src="https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png"  width="700" height="370">
+
+<img src="https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png"  width="1000" height="400">
 
 
 2. 유저별 보유 게임리스트
 
     (1) Time_rating 형성
         플레이시간을 기준으로 time_rating 전환
-![LT_1](https://user-images.githubusercontent.com/70750735/102971685-25892a80-453d-11eb-945a-ead9a318af49.png)
-<img src="https://user-images.githubusercontent.com/70750735/102971685-25892a80-453d-11eb-945a-ead9a318af49.png"  width="700" height="370">
+        
+<img src="https://user-images.githubusercontent.com/70750735/102971685-25892a80-453d-11eb-945a-ead9a318af49.png"  width="400" height="400">
 
       
     (2) Latent Factor 모델
