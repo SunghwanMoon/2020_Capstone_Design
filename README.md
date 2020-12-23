@@ -7,14 +7,17 @@
 
 1. 게임정보
   - 게임 고유 ID 수집
+  
     https://steamspy.com/api
   - ID를 통한 게임 정보 수집
+  
     http://store.steampowered.com/api/appdetails
   
 2. 유저가 보유한 게임리스트
   - 17자리 유저 고유번호 수집 (Steam 리뷰 페이지 크롤링)
   
   - Steam API (GetOwnedGames (v0001)) 활용
+  
     https://developer.valvesoftware.com/wiki/Steam_Web_API#Game_interfaces_and_methods
     
 #### 데이터전처리
@@ -23,10 +26,13 @@
 
 
 2. 유저별 보유 게임리스트
+
   (1) Time_rating 형성
       플레이시간을 기준으로 time_rating 전환
       
+      
   (2) Latent Factor 모델
+  
       원데이터의 NaN값을 처리하기 위하여 Latent Factor[n(factor)=20] 임베딩 진행
       
 #### 모델링
