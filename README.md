@@ -28,7 +28,7 @@
 
 1. 게임 별 5개의 Attribute를 가진 데이터프레임 형성
 
-<img src="https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png"  width="1000" height="400">
+<img src="https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png"  width="600" height="200">
 
 
 2. 유저별 보유 게임리스트
@@ -36,12 +36,13 @@
     (1) Time_rating 형성
         플레이시간을 기준으로 time_rating 전환
         
-<img src="https://user-images.githubusercontent.com/70750735/102971685-25892a80-453d-11eb-945a-ead9a318af49.png"  width="400" height="400">
+<img src="https://user-images.githubusercontent.com/70750735/102971685-25892a80-453d-11eb-945a-ead9a318af49.png"  width="200" height="200">
 
       
     (2) Latent Factor 모델
         원데이터의 NaN값을 처리하기 위하여 Latent Factor[n(factor)=20] 임베딩 진행
-        
+
+<img src="https://user-images.githubusercontent.com/70750735/102972162-fa530b00-453d-11eb-9337-76f2d44a5740.png"  width="200" height="200">
 
  --------------
       
@@ -50,18 +51,26 @@
 1. Content Based Filtering
 
    각 게임의 Description을 활용하여 그 게임의 설정과 플레이 방식을 유추하여 비슷한 게임을 추천하고자 하였다. 이를 위해 활용한 것은 TF-IDF 라이브러리이다. 분석 대상으로는 단어 2개를 기준으로 해당 게임의 특징을 도출하고자 하였다. 그리고 Vector화된 게임의 특징들을 Cosine Similarity 모델을 통해 유사도 검증을 진행하였다. 그리고 유사도가 95% 이상인 게임들 중 20개를 추천할 수 있도록 하였다.
+   
+<img src="https://user-images.githubusercontent.com/70750735/102972266-1f477e00-453e-11eb-89d2-355c6e96f491.png"  width="200" height="200">
 
 
 2. Collaborative Filtering
 
    유저가 보유한 게임과 다른 유저가 보유한 게임을 비교하여 새로운 게임을 추천해주는 협업필터링이다. 협업필터링에 사용한 알고리즘은 Matrix Factorization이다. User-Item 데이터프레임을 기반으로 피어슨 상관계수를 활용하여 유사도를 검증한 후 게임을 추천하는 방식이다.
 
+<img src="https://user-images.githubusercontent.com/70750735/102972337-3a19f280-453e-11eb-9a4c-60bf7926a56c.png"  width="200" height="200">
 
 
 3. Hybrid Filtering
 
       (1) 하이브리드 필터링은 Content-Based-Filtering과 Collaborative-Filtering로 도출된 rating을 가중치를 넣어 게임을 추천하는 Parallelized hybridization을 진행한다. 추천 시스템에 있어 산업적 학계적 사례에 따라 Collaborative Filtering의 가중치(0.95)를 Content-Based-Filtering 보다 높은 가중치(0.90)를 부여한다.
    
-   
+<img src="https://user-images.githubusercontent.com/70750735/102972431-63d31980-453e-11eb-8968-43152b52196f.png"  width="200" height="200">
+
+
+
       (2)또다른 하나의 하이브리드 모델은 CBF와 CLF 추천결과를 비교하여 산출하는 모델링이다. 먼저 CBF와 CLF 모두가 추천한 게임을 우선 추천 게임으로 선정하고 CBF와 CLF 각각 1~3위까지의 게임을 번갈아가면서 추천하게 된다.
+
+<img src="https://user-images.githubusercontent.com/70750735/102972389-50c04980-453e-11eb-8112-07011f813af0.png"  width="200" height="200">
 
