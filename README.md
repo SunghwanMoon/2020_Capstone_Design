@@ -41,7 +41,7 @@
    (2) Latent Factor 모델
        원데이터의 NaN값을 처리하기 위하여 Latent Factor n(factor)=20 임베딩 진행
 
-<img src="https://user-images.githubusercontent.com/70750735/102972162-fa530b00-453d-11eb-9337-76f2d44a5740.png"  width="300" height="300">
+<img src="https://user-images.githubusercontent.com/70750735/102972162-fa530b00-453d-11eb-9337-76f2d44a5740.png"  width="1000" height="300">
 
  --------------
       
