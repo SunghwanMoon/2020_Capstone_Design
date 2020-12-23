@@ -28,7 +28,7 @@
 
 1. 게임 별 5개의 Attribute를 가진 데이터프레임 형성
 
-<img src="https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png"  width="600" height="200">
+<img src="https://user-images.githubusercontent.com/70750735/102971774-523d4200-453d-11eb-8f00-a5d1e2488928.png"  width="1000" height="200">
 
 
 2. 유저별 보유 게임리스트
@@ -37,10 +37,9 @@
         플레이시간을 기준으로 time_rating 전환
         
 <img src="https://user-images.githubusercontent.com/70750735/102971685-25892a80-453d-11eb-945a-ead9a318af49.png"  width="500" height="300">
-
       
-    (2) Latent Factor 모델
-        원데이터의 NaN값을 처리하기 위하여 Latent Factor[n(factor)=20] 임베딩 진행
+   (2) Latent Factor 모델
+       원데이터의 NaN값을 처리하기 위하여 Latent Factor n(factor)=20 임베딩 진행
 
 <img src="https://user-images.githubusercontent.com/70750735/102972162-fa530b00-453d-11eb-9337-76f2d44a5740.png"  width="300" height="300">
 
