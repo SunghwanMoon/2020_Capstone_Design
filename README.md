@@ -55,8 +55,8 @@
 
 3. Hybrid Filtering
 
-  (1) 하이브리드 필터링은 Content-Based-Filtering과 Collaborative-Filtering로 도출된 rating을 가중치를 넣어 게임을 추천하는 Parallelized hybridization을 진행한다. 추천 시스템에 있어 산업적 학계적 사례에 따라 Collaborative Filtering의 가중치(0.95)를 Content-Based-Filtering 보다 높은 가중치(0.90)를 부여한다.
+      (1) 하이브리드 필터링은 Content-Based-Filtering과 Collaborative-Filtering로 도출된 rating을 가중치를 넣어 게임을 추천하는 Parallelized hybridization을 진행한다. 추천 시스템에 있어 산업적 학계적 사례에 따라 Collaborative Filtering의 가중치(0.95)를 Content-Based-Filtering 보다 높은 가중치(0.90)를 부여한다.
    
    
-   (2)또다른 하나의 하이브리드 모델은 CBF와 CLF 추천결과를 비교하여 산출하는 모델링이다. 먼저 CBF와 CLF 모두가 추천한 게임을 우선 추천 게임으로 선정하고 CBF와 CLF 각각 1~3위까지의 게임을 번갈아가면서 추천하게 된다.
+      (2)또다른 하나의 하이브리드 모델은 CBF와 CLF 추천결과를 비교하여 산출하는 모델링이다. 먼저 CBF와 CLF 모두가 추천한 게임을 우선 추천 게임으로 선정하고 CBF와 CLF 각각 1~3위까지의 게임을 번갈아가면서 추천하게 된다.
 
